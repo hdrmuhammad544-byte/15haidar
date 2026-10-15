@@ -11,7 +11,7 @@ async function loadUsers() {
   errorMessage.value = ''
 
   try {
-    const response = await api.get('/api/users')
+    const response = await api.get('/api/api/users')
     users.value = response.data.data
   } catch (error) {
     errorMessage.value =
